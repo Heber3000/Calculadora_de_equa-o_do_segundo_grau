@@ -52,7 +52,7 @@ class EquacaoSegundoGrau:
         elif self.delta == 0:
             return f'Só há uma raiz {"%.2f" % float((-self.b+math.sqrt(self.delta))/self.a*2)}'
         else:
-            return f'Há duas raizes {"%.2f" % float((-self.b+math.sqrt(self.delta))/self.a*2)},{"%.2f" % float((-self.b+math.sqrt(self.delta))/self.a*2)}'
+            return f'Há duas raizes {"%.2f" % float((-self.b+math.sqrt(self.delta))/self.a*2)},{"%.2f" % float((-self.b-math.sqrt(self.delta))/self.a*2)}'
 
 
 
